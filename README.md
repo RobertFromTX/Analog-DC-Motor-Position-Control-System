@@ -8,7 +8,7 @@ If the video does not play, refresh the page.
 ## Project Overview and Goals
 This is a project I completed at the beginning of Summer 2025. Essentially it turns a brushed DC motor into a servo motor, though it cannot produce the torque of one. Given an input voltage in the range of 0V-5V, it positions the motor to an angle proportional to the input voltage. For example, 0V would position the motor at 0 degrees while 2.5V would position the motor at 180 degrees. The controller is built with op-amps and an encoder. Initially, I wanted to create a PID controller, but the signals from the derivative term were often too noisy. As a result, I ended up with a PI controller. Nevertheless, a PI controller is more than sufficient to control the position of the motor.
 
-![Motor Controller](images/IMG_3965 .JPG)
+![Motor Controller](images/IMG_3965.JPG)
 
 ## Design
 There were two design constraints that I set for this project. The first design constraint was that I could only use parts I already had on hand. The second design constraint was that only one breadboard can be used to place the circuit components onto.
