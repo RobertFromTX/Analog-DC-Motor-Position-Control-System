@@ -36,6 +36,7 @@ Designing the PI Controller was easily the most difficult part of this project. 
 4. Summing op-amp circuit
 5. Buffer to drive DC motor
     * Since the only op-amp I have used for all of the circuits up to this point is the [UA741CP](https://www.ti.com/lit/ds/symlink/ua741.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1756429260439&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fua741), there is nothing that has the capability to drive the brushed DC motor. While the UA741CP op-amp can supply a maximum of 40 uA of current, the motor will need much more. The [TDA2030A](https://www.st.com/resource/en/datasheet/cd00000129.pdf) is able to supply up to 3.5A. This is enough current for this motor, but there must be caution for current spikes. The output current of the TDA2030A is internally limited, which will help prevent the op-amp from blowing up.
+    
 Before I finalized my component values for each op-amp configuration, I ran simulations using LTspice to ensure that the circuits behaved desireably. Then, I created a model in simulink to ensure that I can correctly integrate each component together. Below is my Simulink block diagram.
 ![Simulink Block Diagram](<images/Simulink Example.png>) <br>
 Now that I determined that the system can be integrated properly, I designed a circuit by selecting passive component values and creating a schematic in Kicad. Below is a schematic of the final circuit.
