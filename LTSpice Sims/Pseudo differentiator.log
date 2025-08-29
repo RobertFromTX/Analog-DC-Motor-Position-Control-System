@@ -1,0 +1,20 @@
+LTspice 24.1.8 for Windows
+Circuit: C:\Users\Snoozer\Desktop\LTSpice Sims\Pseudo differentiator.net
+Start Time: Thu May  8 16:36:28 2025
+solver = Normal
+Maximum thread count: 6
+tnom = 27
+temp = 27
+method = trap
+Laplace(B1): Window=4 Nfft=32768
+C:\Users\Snoozer\Desktop\LTSpice Sims\Pseudo differentiator.net(4): Limiting fall time to 3.88578e-17.
+
+V1 Vi 0 PULSE(0 5 0 .2 0 0 .2) AC 1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.300 seconds.
+
+Files loaded:
+C:\Users\Snoozer\Desktop\LTSpice Sims\Pseudo differentiator.net
+C:\Users\Snoozer\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
